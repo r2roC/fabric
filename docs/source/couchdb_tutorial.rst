@@ -635,6 +635,12 @@ when writing your queries:
 * You should try to avoid operators that will result in a full table scan or a
   full index scan such as ``$or``, ``$in`` and ``$regex``.
 
+Storing the channel name in an environment variable simplifies commands: 
+
+.. code:: bash
+
+  export CHANNEL_NAME="mychannel"
+
 In the previous section of this tutorial, you issued the following query against
 the marbles chaincode:
 
